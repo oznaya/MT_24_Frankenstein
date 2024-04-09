@@ -1,9 +1,20 @@
-const int buttonPin1= 13;
+//graveyard shovel
+const int buttonPin1= 1;
 const int ledPin= 2;
 
 #include <Servo.h>
 Servo myservo; //creates servo
+
+//book placed on desk
 const int buttonPin2= 3;
+
+//body parts removed from grave
+const int buttonPin3= 4;
+const int buttonPin4= 5;
+const int buttonPin5= 6;
+
+//cables connected so that switching table is activated
+const int buttonPin6= 7
 
 int buttonState= 0;
 
@@ -13,6 +24,9 @@ void setup() {
 
    myservo.attach(9); //attaches servo
    pinMode(buttonPin2, INPUT);
+   myservo.attach(10); //for our second servo that'll switch the table.
+
+   
 
 }
 
